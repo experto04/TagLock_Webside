@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TagLock – Smarte Produktsicherung</title>
+  <meta name="description" content="TagLock ist ein kostengünstiges Sicherungssystem für Werkzeuge & Elektrogeräte – mit Mikrocontroller, RFID-Entsperrung, Alarm und Web-Admin.">
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="container">
+  <nav class="nav">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="TagLock Logo" width="28" height="28">
+      <span>TagLock</span>
+    </div>
+    <a class="btn" href="#kontakt">Kontakt</a>
+  </nav>
+  <section class="hero">
+    <h1>Produktsicherung, die sich rechnet.</h1>
+    <p>RFID-Entsperrung für Mitarbeiter, Alarm bei Diebstahl – protokolliert und verwaltet im Web‑Admin.</p>
+    <div class="cta">
+      <a class="btn" href="#features">Mehr erfahren</a>
+      <a class="btn ghost" href="https://github.com/USER_OR_ORG/REPO" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+</header>
+
+<main class="container">
+  <section id="features" class="grid">
+    <article class="card">
+      <h3>RFID-Entsperrung</h3>
+      <p>Geräte werden per Mitarbeiter‑RFID freigeschaltet. Jeder Vorgang erhält Zeitstempel & Mitarbeiter‑ID.</p>
+    </article>
+    <article class="card">
+      <h3>Alarm & Sicherungsseil</h3>
+      <p>Manipulationen am Sicherungsseil lösen akustischen Alarm aus – optional mit Push‑Benachrichtigung.</p>
+    </article>
+    <article class="card">
+      <h3>Web‑Admin</h3>
+      <p>Transparente Protokolle, Geräteverwaltung, Nutzerrollen & Datenexport – alles im Browser.</p>
+    </article>
+  </section>
+
+  <section class="wide">
+    <h2>Projektstatus</h2>
+    <ul class="timeline">
+      <li><strong>Hardware-Prototyp</strong> – Mikrocontroller & Sensorik in Arbeit</li>
+      <li><strong>PWA</strong> – Entsperr-Frontend mit Offline‑Support</li>
+      <li><strong>Adminpanel</strong> – Next.js/Node Backend + DB</li>
+    </ul>
+  </section>
+
+  <section class="grid">
+    <article class="card">
+      <h3>Technik‑Stack (Vorschlag)</h3>
+      <ul>
+        <li>Firmware: ESP32 / Zephyr / Arduino</li>
+        <li>PWA: Vite + TypeScript</li>
+        <li>Backend: Node.js (Nest/Express) + PostgreSQL</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Team</h3>
+      <p>Niklas Waldhör · Raphael Riesner · Maximilian Stegbauer</p>
+    </article>
+  </section>
+
+  <section id="kontakt" class="wide">
+    <h2>Kontakt</h2>
+    <p>Fragen? Issues & Diskussionen im <a href="https://github.com/USER_OR_ORG/REPO/issues" target="_blank" rel="noopener">GitHub‑Repo</a>.</p>
+  </section>
+</main>
+
+<footer class="container footer">
+  <small>© 2025 TagLock — Made with ❤️ on GitHub Pages</small>
+</footer>
+</body>
+</html>
