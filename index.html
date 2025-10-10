@@ -5,80 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TagLock – Smarte Produktsicherung</title>
   <meta name="description" content="TagLock ist ein kostengünstiges Sicherungssystem für Werkzeuge & Elektrogeräte – mit Mikrocontroller, RFID-Entsperrung, Alarm und Web-Admin.">
+
+  <!-- Canonical & theming -->
+  <link rel="canonical" href="https://experto04.github.io/TagLock_Webside/">
+  <meta name="theme-color" content="#4f8cff">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="TagLock – Smarte Produktsicherung">
+  <meta property="og:description" content="RFID-Entsperrung, Alarm bei Diebstahl, Web-Admin & transparente Protokolle.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://experto04.github.io/TagLock_Webside/">
+  <meta property="og:image" content="https://experto04.github.io/TagLock_Webside/assets/logo.svg">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Icons / Fonts -->
   <link rel="icon" href="assets/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "TagLock",
+    "applicationCategory": "SecurityApplication",
+    "operatingSystem": "Web, Android (PWA)",
+    "description": "Sicherungssystem mit RFID-Entsperrung, Alarm und Web-Admin.",
+    "url": "https://experto04.github.io/TagLock_Webside/",
+    "creator": {
+      "@type": "Organization",
+      "name": "TagLock Team"
+    }
+  }
+  </script>
 </head>
 <body>
-  
-<header class="container">
-  <nav class="nav">
+<noscript>
+  <div class="container" style="background:#151826;border:1px solid #23283a;border-radius:12px;margin:16px auto;padding:12px;color:#e8eefc">
+    Diese Website funktioniert ohne JavaScript – aber einige Komfortfunktionen (z. B. sanftes Scrollen) sind deaktiviert.
+  </div>
+</noscript>
+
+<header class="container" role="banner">
+  <nav class="nav" aria-label="Hauptnavigation">
     <div class="brand">
       <img src="assets/logo.svg" alt="TagLock Logo" width="28" height="28">
       <span>TagLock</span>
     </div>
-    <a class="btn" href="#kontakt">Kontakt</a>
+    <div style="display:flex;gap:12px;align-items:center">
+      <a class="btn ghost" href="#features">Features</a>
+      <a class="btn ghost" href="#status">Status</a>
+      <a class="btn ghost" href="https://github.com/experto04/TagLock_Webside" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="#kontakt">Kontakt</a>
+    </div>
   </nav>
+
   <section class="hero">
     <h1>Produktsicherung, die sich rechnet.</h1>
-    <p>RFID-Entsperrung für Mitarbeiter, Alarm bei Diebstahl – protokolliert und verwaltet im Web‑Admin.</p>
+    <p>RFID-Entsperrung für Mitarbeiter, Alarm bei Diebstahl – protokolliert und verwaltet im Web-Admin.</p>
     <div class="cta">
-      <a class="btn" href="#features">Mehr erfahren</a>
-      <a class="btn ghost" href="https://github.com/USER_OR_ORG/REPO" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="#features" aria-label="Zu den Features springen">Mehr erfahren</a>
+      <a class="btn ghost" href="https://github.com/experto04/TagLock_Webside/issues" target="_blank" rel="noopener">Issues & Roadmap</a>
     </div>
   </section>
 </header>
 
-<main class="container">
-  <section id="features" class="grid">
+<main class="container" id="main" role="main">
+  <section id="features" class="grid" aria-label="Hauptfeatures">
     <article class="card">
       <h3>RFID-Entsperrung</h3>
-      <p>Geräte werden per Mitarbeiter‑RFID freigeschaltet. Jeder Vorgang erhält Zeitstempel & Mitarbeiter‑ID.</p>
+      <p>Geräte werden per Mitarbeiter-RFID freigeschaltet. Jeder Vorgang erhält Zeitstempel &amp; Mitarbeiter-ID.</p>
     </article>
     <article class="card">
-      <h3>Alarm & Sicherungsseil</h3>
-      <p>Manipulationen am Sicherungsseil lösen akustischen Alarm aus – optional mit Push‑Benachrichtigung.</p>
+      <h3>Alarm &amp; Sicherungsseil</h3>
+      <p>Manipulationen am Sicherungsseil lösen akustischen Alarm aus – optional mit Push-Benachrichtigung.</p>
     </article>
     <article class="card">
-      <h3>Web‑Admin</h3>
-      <p>Transparente Protokolle, Geräteverwaltung, Nutzerrollen & Datenexport – alles im Browser.</p>
+      <h3>Web-Admin</h3>
+      <p>Transparente Protokolle, Geräteverwaltung, Nutzerrollen &amp; Datenexport – alles im Browser.</p>
     </article>
   </section>
 
-  <section class="wide">
-    <h2>Projektstatus</h2>
+  <section id="status" class="wide" aria-labelledby="status-title">
+    <h2 id="status-title">Projektstatus</h2>
     <ul class="timeline">
-      <li><strong>Hardware-Prototyp</strong> – Mikrocontroller & Sensorik in Arbeit</li>
-      <li><strong>PWA</strong> – Entsperr-Frontend mit Offline‑Support</li>
-      <li><strong>Adminpanel</strong> – Next.js/Node Backend + DB</li>
+      <li><strong>Hardware-Prototyp</strong> – Mikrocontroller &amp; Sensorik in Arbeit</li>
+      <li><strong>PWA</strong> – Entsperr-Frontend mit Offline-Support</li>
+      <li><strong>Adminpanel</strong> – Next.js/Node Backend + PostgreSQL</li>
     </ul>
   </section>
 
-  <section class="grid">
+  <section class="grid" aria-label="Technik und Team">
     <article class="card">
-      <h3>Technik‑Stack (Vorschlag)</h3>
+      <h3>Technik-Stack (Vorschlag)</h3>
       <ul>
         <li>Firmware: ESP32 / Zephyr / Arduino</li>
-        <li>PWA: Vite + TypeScript</li>
+        <li>PWA: Vite + TypeScript (PWA, Offline)</li>
         <li>Backend: Node.js (Nest/Express) + PostgreSQL</li>
       </ul>
     </article>
     <article class="card">
       <h3>Team</h3>
       <p>Niklas Waldhör · Raphael Riesner · Maximilian Stegbauer</p>
+      <p><a href="https://github.com/experto04/TagLock_Webside" target="_blank" rel="noopener">Zum Repository</a></p>
     </article>
   </section>
 
-  <section id="kontakt" class="wide">
-    <h2>Kontakt</h2>
-    <p>Fragen? Issues & Diskussionen im <a href="https://github.com/USER_OR_ORG/REPO/issues" target="_blank" rel="noopener">GitHub‑Repo</a>.</p>
+  <section id="kontakt" class="wide" aria-labelledby="kontakt-title">
+    <h2 id="kontakt-title">Kontakt</h2>
+    <p>Fragen? Starte eine Diskussion oder melde ein Issue im
+      <a href="https://github.com/experto04/TagLock_Webside/issues" target="_blank" rel="noopener">GitHub-Repo</a>.
+    </p>
   </section>
 </main>
 
-<footer class="container footer">
-  <small>© 2025 TagLock — Made with ❤️ on GitHub Pages</small>
+<footer class="container footer" role="contentinfo">
+  <small>© 2025 TagLock — Made with ❤️ on GitHub Pages ·
+    <a href="https://github.com/experto04/TagLock_Webside/actions" target="_blank" rel="noopener">Deploy-Status</a>
+  </small>
 </footer>
+
+<script>
+  // kleines QoL: smooth scroll für interne Links
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const id = a.getAttribute('href');
+      const el = document.querySelector(id);
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+    });
+  });
+</script>
 </body>
 </html>
